@@ -1,0 +1,2 @@
+background\fon1.jpg
+self.styleFon1

@@ -1,0 +1,43 @@
+0 - прочее
+    title
+    centralwidget
+    background
+    my_font
+    menubar
+    statusbar
+1 - меню рег и авториз
+    buttonReg
+    buttonLog
+2 - меню рег
+3 - меню авториз
+4 - главное меню
+    menuLabel1
+    menuButton1
+    menuButton2
+    menuButton3
+5 - игра
+    gameTimer
+    gameExample
+    gameAnswer1
+    gameAnswer2
+    gameAnswer3
+    gameAnswer4
+    gameRestart
+6 - конец игры
+7 - настройки
+
+new rows,query[128];
+new log[24],pas[32];
+format(query,sizeof(query),"SELECT..");
+mysql_query(MySQL:DATABASE);
+if(cache_get_row_count(rows)==0) return SendClientMessage(playerid,-1,"Ответа нет!");
+cache_get_value_name(0,"Nick",log);
+cache_get_value_name(0,"Password",pas);
+printf("Login: %s\nPassword: %s",log,pas);
+
+
+TODO:
+1. в настройках жирный шрифт
+2. сделать презентацию
+3. в настройках нет рамок
+4.
